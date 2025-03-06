@@ -1,0 +1,293 @@
+/* start variable */
+:root {
+  --Strong-Cyan: hsl(171, 66%, 44%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --main-transition: 0.5s;
+  --main-font: 18px;
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --first-weight: 400;
+  --second-weight: 600;
+  --primary-color: #0075ff;
+  --primary-color-alt: #0366da;
+}
+/* end variable */
+/* start header  */
+
+.header {
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  position: relative;
+}
+
+.header .container i {
+  font-size: 93px;
+  margin-bottom: 30px;
+  color: var(--Strong-Cyan);
+}
+.header .container .text h1 {
+  text-align: center;
+  color: var(--Dark-Grayish-Blue);
+  word-spacing: 2px;
+}
+.header .container .text p {
+  text-align: center;
+  color: var(--Grayish-Blue);
+  margin-bottom: 40px;
+}
+.download {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+}
+.download button:nth-of-type(1) {
+  font-size: 18px;
+  background-color: var(--Strong-Cyan);
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  word-spacing: 3px;
+}
+.download button:nth-of-type(2) {
+  font-size: 18px;
+  background-color: var(--Light-Blue);
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: white;
+  word-spacing: 3px;
+}
+.download button:hover {
+  scale: 1.1;
+}
+@media (max-width: 768px) {
+  .download button:hover {
+    scale: none;
+  }
+}
+/* end header  */
+/* start computer */
+.computer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.computer .container .asmaa {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+/* start responsive computer */
+@media (max-width: 991px) {
+  .computer .container .asmaa {
+    flex-direction: column;
+  }
+}
+/* end responsive computer */
+.computer .container .asmaa .image {
+  flex-basis: 40%;
+}
+.computer .container .asmaa .image img {
+  margin-left: -250px;
+}
+@media (max-width: 991px) {
+  .computer .container .asmaa .image img {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 100%;
+  }
+}
+.computer .container .asmaa .content {
+  padding: 50px;
+  flex-basis: 45%;
+}
+.computer .container .asmaa .content .advantage {
+  margin-bottom: 40px;
+}
+.computer .container .asmaa .content .advantage h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: var(--Dark-Grayish-Blue);
+}
+.computer .container .asmaa .content .advantage p {
+  color: var(--Grayish-Blue);
+  line-height: 1.8;
+}
+@media (max-width: 991px) {
+  .computer .container .asmaa .content .advantage {
+    text-align: center;
+    margin-top: 50px;
+  }
+}
+/* end computer */
+/* start access */
+.access {
+  padding-bottom: 100px;
+}
+.access .container .device img {
+  max-width: 100%;
+}
+/* end access */
+/* start workflow  */
+.workflow {
+  padding-bottom: 50px;
+}
+.workflow .container .boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+}
+.workflow .container .boxes .box {
+  padding: 40px;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .workflow .container .boxes .box {
+    gap: 0;
+    padding: 30px 50px;
+  }
+}
+@media (max-width: 1199px) {
+  .workflow .container .boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+  }
+}
+.workflow .container .boxes .box i {
+  margin-bottom: 45px;
+  font-size: 50px;
+  color: var(--Grayish-Blue);
+}
+/* end workflow  */
+/* start logo  */
+.logo {
+  padding-bottom: 100px;
+  padding-top: 50px;
+}
+.logo .container .logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 35px;
+  row-gap: 100px;
+}
+@media (max-width: 767px) {
+  .logo .container .logos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .logo .container .logos img {
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+/* end logo  */
+/* start download-links  */
+.download-link {
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+/* end download-links  */
+/* start footer  */
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #efefeffc;
+}
+.footer .container .content {
+  display: flex;
+}
+.footer .container .icon i {
+  color: var(--Strong-Cyan);
+  font-size: 60px;
+  margin-right: 100px;
+}
+.footer .container .links {
+  display: flex;
+  justify-content: space-between;
+  gap: 70px;
+}
+.footer .container .links a {
+  color: var(--Dark-Grayish-Blue);
+  transition: 0.3s;
+  font-size: 18px;
+  display: block;
+  padding: 7px;
+  width: max-content;
+}
+.footer .container .links .col {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+}
+.footer .container .links a:hover {
+  color: var(--Strong-Cyan);
+}
+.footer .container .social-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+.footer .container .social-icon i {
+  margin-left: 25px;
+  font-size: 30px;
+  color: var(--Dark-Grayish-Blue);
+  transition: 0.5s;
+  cursor: pointer;
+}
+@media (max-width: 992px){
+  .footer .container .social-icon {
+margin-right: auto;
+margin-left: auto;
+margin-top: 20px;
+  }
+}
+.footer .container .social-icon i:hover {
+  color: var(--Strong-Cyan);
+  rotate: 360deg;
+  scale: 1.2;
+}
+@media (max-width: 992px) {
+  .footer .container .icon i {
+    margin-right:auto ;
+    margin-left: auto;
+  }
+}
+@media (max-width: 992px) {
+  .footer .container .content,
+  .footer .container .links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer .container .links a {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 992px) {
+  .footer .container .links {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 992px) {
+  .footer .container .links .col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* end footer  */

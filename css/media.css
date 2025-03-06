@@ -1,0 +1,52 @@
+/* start responsive  */
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* end responsive */
+/* start responsive(download) */
+@media (max-width: 767px) {
+ .download{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+  }
+  
+}
+@media (max-width: 767px) {
+  .header .container .download button{
+    padding: 17px 7px !important;
+    display: block;
+    font-size: 20px !important;
+    font-weight: 400;
+  }
+  
+}
+/* start responsive computer */
+@media (max-width: 991px) {
+  .computer .container .asmaa {
+
+  }
+}
+
+
+/* end responsive computer */
+
+/* end responsive(download) */
